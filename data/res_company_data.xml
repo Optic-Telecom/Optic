@@ -35,4 +35,15 @@
 	<field name="code">BodSCL</field>
 	<field name="partner_id" ref="base.main_partner"/>
     </record>
+
+    <record id="optic_location_employed" model="stock.location">
+        <field name="name">Ubicaciones de Empleados</field>
+	<field name="usage">view</field>
+    </record>
+
+    <record id="optic_location_technical" model="stock.location">
+        <field name="name">Tecnicos</field>
+	<field name="location_id" ref="optic_location_employed"/>		
+	<field name="usage">internal</field>
+    </record>
 </odoo>
