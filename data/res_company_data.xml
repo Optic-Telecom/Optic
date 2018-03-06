@@ -18,6 +18,7 @@
     <!-- Basic Company  -->
     <record id="base.main_company" model="res.company">
         <field name="name">Optic Telecom</field>
+	<field name="logo" type="base64" file="Optic/static/img/logo.png"/>
         <field name="partner_id" ref="base.main_partner"/>
         <field name="city">Santiago de Chile</field>
         <field name="country_id" eval="ref('base.cl')"/>
